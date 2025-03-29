@@ -59,3 +59,23 @@ textarea,
 select {
   font: inherit;
 }
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+  --ff-design: "Satisfy", cursive;
+  --ff-brand: "Margarine", cursive;
+  --mono: "Oxygen mono", monospace;
+
+  /* Colors */
+  --clr-white: #fff;
+  --clr-dark: #333;
+  --clr-grey-1: #102a42;
+  --clr-grey-2: #617d98;
+  --clr-grey-3: #f1f5f8;
+  --clr-primary: #ff007f;
+  --clr-primary-light: #f7778b;
+
+  --clr-secondary: #e9b949;
+
+  --transition: all 0.3s linear;
+}
