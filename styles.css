@@ -128,3 +128,37 @@ select {
 .wrapper--wide {
   max-width: 1330px;
 }
+
+/*Navbar*/
+.site-header {
+  padding-block: 1rem;
+}
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  justify-content: space-between;
+}
+.primary-navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-family: var(--ff-brand);
+  font-size: 1.5rem;
+  font-weight: 1000;
+  color: var(--clr-primary);
+  cursor: pointer;
+}
