@@ -82,11 +82,16 @@ select {
   --clr-grey-2: #617d98;
   --clr-grey-3: #f1f5f8;
   --clr-primary: #ff007f;
-  --clr-primary-light: #f7778b;
+  --clr-primary-light: #f55da9;
+  --clr-brand-400: hsl(25, 88%, 75%);
+  --clr-brand-500: hsl(25, 88%, 66%);
 
   --clr-secondary: #e9b949;
 
   --transition: all 0.3s linear;
+  /* syntax highlighting reasons only */
+  --text-brand: var(--clr-brand-500);
+  --text-brand-light: var(--clr-brand-400);
 
   /*font-related custom properties*/
   --fs-300: 0.875rem;
@@ -124,6 +129,7 @@ select {
   --border-radius-3: 0.75rem;
 }
 /*Wrappers (or containers)*/
+
 .background-extra-light {
   background-color: var(--background-gray-3);
 }
@@ -170,9 +176,16 @@ select {
     }
   }
 }
-.section-title {
-  font-size: var(--font-size-heading-regular);
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  color: var(--clr-white);
 }
+
 .equal-columns {
   display: grid;
   gap: var(--equal-columns-gap, 1rem);
@@ -194,6 +207,27 @@ select {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+.button {
+  display: inline flex;
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 0.5px;
+  border: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0, 0, 3, 8.2);
+  text-decoration: none;
+  border-radius: var(--border-radius-1);
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--background-primary-light);
+  color: var(--clr-white);
 }
 
 /*Navbar*/
@@ -244,4 +278,49 @@ select {
     font-size: var(--font-size-heading-xl);
     color: var(--clr-secondary);
   }
+}
+/*About Section*/
+
+.about-picture-container {
+  background-color: var(--clr-primary);
+  max-width: 30rem;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.about-picture-container:hover .about-picture {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.about-picture {
+  transition: var(--transition);
+}
+
+/**********************Utilities**********************/
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: var(--font-size-heading-regular);
+  color: var(--clr-primary);
+  font-family: var(--ff-design);
+}
+.background-accent {
+  background-color: var(--background-primary);
+}
+.text-brand {
+  color: var(--clr-secondary);
+}
+.font-size-sm {
+  font-size: var(--font-size-sm);
+}
+.font-size-regular {
+  font-size: var(--font-size-regular);
+}
+.font-size-md {
+  font-size: var(--font-size-md);
+}
+.font-size-lg {
+  font-size: var(--font-size-lg);
 }
