@@ -56,7 +56,7 @@ li {
 
 img,
 picture {
-  max-inline-size: 100%;
+  max-inline-size: 75%;
   display: block;
 }
 
@@ -277,7 +277,6 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
-  color: var(--clr-white);
 }
 
 .button {
@@ -404,4 +403,7 @@ p {
 }
 .background-dark {
   background-color: var(--background-gray-1);
+}
+.text-accent-gray {
+  color: var(--clr-grey-2);
 }
