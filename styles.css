@@ -32,7 +32,7 @@ h3,
 button,
 input,
 label {
-  line-height: 1.1;
+  line-height: 0.9;
 }
 
 h1,
@@ -118,7 +118,7 @@ select {
 .wrapper {
   max-width: 1130px;
   margin-inline: auto;
-  padding-inline: 1rem;
+  padding: 1rem 0;
 }
 
 .wrapper--narrow {
@@ -161,4 +161,23 @@ select {
   font-weight: 1000;
   color: var(--clr-primary);
   cursor: pointer;
+}
+.hero {
+  text-align: center;
+  background-image: url(/assets/myprofiles/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-size: cover;
+  font-size: var(--font-size-md);
+  color: var(--clr-grey-1);
+}
+.hero__title {
+  font-size: var(--font-size-heading-lg);
+
+  > span {
+    display: block;
+    font-size: var(--font-size-heading-xl);
+    color: var(--clr-secondary);
+  }
+}
+.wrapper > P {
+  background-color: var(--clr-primary-light);
 }
