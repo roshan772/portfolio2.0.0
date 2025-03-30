@@ -66,6 +66,15 @@ select {
   --ff-brand: "Margarine", cursive;
   --mono: "Oxygen mono", monospace;
 
+  /*BackGround Colors*/
+  --background-dark: var(--clr-dark);
+  --background-gray-1: var(--clr-grey-1);
+  --background-gray-2: var(--clr-grey-2);
+  --background-gray-3: var(--clr-grey-3);
+  --background-white: var(--clr-white);
+  --background-primary: var(--clr-primary);
+  --background-primary-light: var(--clr-primary-light);
+
   /* Colors */
   --clr-white: #fff;
   --clr-dark: #333;
@@ -115,18 +124,42 @@ select {
   --border-radius-3: 0.75rem;
 }
 /*Wrappers (or containers)*/
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+.grid-flow {
+  display: grid;
+  gap: var(--grid-flow-space, 1rem);
+
+  align-content: start;
+  justify-items: start;
+}
 .wrapper {
-  max-width: 1130px;
+  --wrapper-max-width: 1330px;
+  --wrapper-padding: 1rem;
+  max-width: var(--wrapper-max-width);
   margin-inline: auto;
-  padding: 1rem 0;
+  padding-inline: var(--wrapper-padding);
+  box-sizing: content-box;
 }
 
-.wrapper--narrow {
-  max-width: 720px;
+.wrapper[data-width="narrow"] {
+  --wrapper-max-width: 720px;
 }
 
-.wrapper--wide {
-  max-width: 1330px;
+.wrapper[data-width="wide"] {
+  --wrapper-max-width: 1430px;
+}
+.section {
+  padding-block: 3.75rem;
+
+  @media (min-width: 760px) {
+    padding-block: 8rem;
+
+    &[data-padding="compact"] {
+      padding-block: 1.5rem;
+    }
+  }
 }
 
 /*Navbar*/
@@ -164,10 +197,10 @@ select {
 }
 .hero {
   text-align: center;
-  background-image: url(/assets/myprofiles/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-image: url(assets/myprofiles/3396809.jpg);
   background-size: cover;
   font-size: var(--font-size-md);
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
 }
 .hero__title {
   font-size: var(--font-size-heading-lg);
@@ -177,7 +210,4 @@ select {
     font-size: var(--font-size-heading-xl);
     color: var(--clr-secondary);
   }
-}
-.wrapper > P {
-  background-color: var(--clr-primary-light);
 }
