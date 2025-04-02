@@ -42,31 +42,14 @@ body {
   margin: 0 auto;
   max-width: 1370px;
 }
-nav {
-  background-color: #37ff8b;
-  height: 80px;
-  width: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary);
 }
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 20px;
-}
-nav ul li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-family: var(--ff-mono);
-}
-a.active,
-a:hover {
-  background: #f7778b;
-  transition: 0.5s;
-}
+
 .img_title_container {
   display: flex;
   flex-direction: column;
@@ -128,52 +111,4 @@ a:hover {
   100% {
     transform: translateX(calc(-100% - var(--gap)));
   }
-}
-/* === removing default button style ===*/
-.button {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-}
-.button_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space);
-}
-/* button styling */
-.button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(8, 4, 4, 0.6);
-  --animation-color: #37ff8b;
-  --fs-size: 1rem;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-/* hover */
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
 }
