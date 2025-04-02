@@ -22,16 +22,21 @@ body {
   min-height: 100vh;
 }
 body {
-  --space: 0.75rem;
+  --space: 0.55rem;
 
-  display: grid;
-  align-content: center;
   overflow: hidden;
-  gap: var(--space);
-  width: 100%;
-  font-family: "Corben", system-ui, sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.5;
+}
+.clearfix::after,
+::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.section-center {
+  padding: 0;
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1370px;
 }
 .img_title_container {
   display: flex;
@@ -66,6 +71,7 @@ body {
 }
 .marquee_group p {
   font-family: var(--ff-design);
+  color: var(--clr-grey-2);
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee_group {
@@ -79,8 +85,7 @@ body {
   border-radius: 1rem;
 }
 .marquee--borders {
-  border-block: 1px solid red;
-  padding-block: 0.75rem;
+  padding-block: 0.5rem;
 }
 .marquee--reverse .marquee_group {
   animation-direction: reverse;
@@ -94,4 +99,52 @@ body {
   100% {
     transform: translateX(calc(-100% - var(--gap)));
   }
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space);
+}
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(8, 4, 4, 0.6);
+  --animation-color: #37ff8b;
+  --fs-size: 1rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
