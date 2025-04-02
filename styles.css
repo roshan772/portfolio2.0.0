@@ -418,7 +418,7 @@ p {
 }
 .hero {
   text-align: center;
-  background-image: url(assets/myprofiles/3396809.jpg);
+
   background-size: cover;
   font-size: var(--font-size-md);
   color: var(--clr-white);
