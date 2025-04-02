@@ -47,6 +47,10 @@ body {
   object-fit: cover;
   border-radius: 1rem;
 }
+.marquee--borders {
+  border-block: 1px solid red;
+  padding-block: 0.75rem;
+}
 .marquee--reverse .marquee_group {
   animation-direction: reverse;
   animation-delay: calc(var(--duration) / -2);
