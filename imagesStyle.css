@@ -2,11 +2,27 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --mono: "Oxygen mono", monospace;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+  --ff-design: "Satisfy", cursive;
+  --ff-brand: "Margarine", cursive;
+
+  /* Colors */
+  --clr-white: #fff;
+  --clr-dark: #333;
+  --clr-grey-1: #102a42;
+  --clr-grey-2: #617d98;
+  --clr-grey-3: #f1f5f8;
+  --clr-primary: #ff007f;
+  --clr-primary-light: #f7778b;
+}
 body {
   min-height: 100vh;
 }
 body {
-  --space: 2rem;
+  --space: 0.75rem;
 
   display: grid;
   align-content: center;
@@ -16,6 +32,18 @@ body {
   font-family: "Corben", system-ui, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
+}
+.img_title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space);
+}
+.img_title_container h3 {
+  font-size: 2rem;
+  color: var(--clr-primary);
+  font-family: var(--mono);
 }
 .marquee {
   --duration: 60s;
@@ -35,6 +63,9 @@ body {
   gap: var(--gap);
   min-width: 100%;
   animation: scroll var(--duration) linear infinite;
+}
+.marquee_group p {
+  font-family: var(--ff-design);
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee_group {
