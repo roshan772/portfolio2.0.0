@@ -3,432 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" href="indexHtml.css" />
+    <!--=============== FAVICON ===============-->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
     />
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--=============== REMIXICONS ===============-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
-    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Roshan K</title>
   </head>
   <body>
-    <!--Headeer new Section Starting-->
-    <header class="header">
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="/assets/myprofiles/Black White Minimalist Simple Modern Wedding Couple Logo.png"
-            width="64"
-            height="24"
-            alt="Roshan Home"
-          />
-        </a>
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img
-                src="/assets/myprofiles/Black White Minimalist Simple Modern Wedding Couple Logo.png"
-                width="64"
-                height="24"
-                alt="Julia home"
-              />
-            </a>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header"></header>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-          <ul class="navbar-list">
-            <li>
-              <a href="#" class="navbar-link">Home</a>
-            </li>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home"></section>
 
-            <li>
-              <a href="#" class="navbar-link">About</a>
-            </li>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills"></section>
 
-            <li>
-              <a href="#" class="navbar-link">Projects</a>
-            </li>
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification"></section>
 
-            <li>
-              <a href="#" class="navbar-link">Blog</a>
-            </li>
-            <li>
-              <a href="contact.html"
-                ><i class="fa-regular fa-address-card"></i>Contact</a
-              >
-            </li>
-          </ul>
-          <div class="wrapperemailphone">
-            <a href="mailto:info@email.com" class="contact-link"
-              >info@email.com</a
-            >
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services"></section>
 
-            <a href="tel:001234567890" class="contact-link">+94 710702616</a>
-          </div>
-          <ul class="social-list">
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects"></section>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section"></section>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-dribbble"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
-      </div>
-    </header>
-    <!--Headeer new Section Ending-->
-
-    <!--Headeer Section Startings
-    <header class="site-header">
-      <div class="wrapper">
-        <div class="site-header__inner">
-          <div class="logo">
-            <span><i class="fa-solid fa-code"></i>Roshan</span>
-          </div>
-          <nav class="primary-navigation">
-            <ul class="nav-items">
-              <li>
-                <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-              </li>
-              <li>
-                <a href="about.html"
-                  ><i class="fa-solid fa-address-card"></i>About</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fa-brands fa-servicestack"></i>Services</a
-                >
-              </li>
-              <li>
-                <a href="skills"><i class="fa-solid fa-check"></i>Skills</a>
-              </li>
-              <li>
-                <a href="portfolio"
-                  ><i class="fa-solid fa-user-tie"></i>Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="contact.html"
-                  ><i class="fa-regular fa-address-card"></i>Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- Header Section Ending -->
-    <!-- HeroFlow Section Starting -->
-    <main>
-      <section class="hero section flow" data-padding="compact">
-        <div class="wrapper">
-          <h1 class="hero__title">
-            Discover the world through
-            <span>my creativity, innovation, and passion for technology</span>
-          </h1>
-        </div>
-        <div class="wrapper" data-width="narrow">
-          <div class="flow">
-            <p>
-              Every journey begins with curiosity, and every discovery shapes a
-              new perspective.
-            </p>
-            <p>
-              Whether it's through innovation, creativity, or technology, the
-              world is full of endless opportunities waiting to be explored.
-            </p>
-            <p>
-              Step forward, embrace new challenges, and turn your ideas into
-              reality
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--**********************Quates Starting********************-->
-      <section
-        class="text-center background-accent section"
-        data-padding="compact"
-      >
-        <div class="font-size-lg flow wrapper" data-width="narrow">
-          <h2>Start Your <span class="text-brand">Coding Journey!</span></h2>
-          <p>
-            Whether you're passionate about building web applications, solving
-            real-world problems, or pushing the boundaries of technology,
-            software development opens a world of endless opportunities.
-          </p>
-        </div>
-      </section>
-      <!--**********************Quates Ending********************-->
-
-      <!--******************AboutMe Section Starting************ -->
-
-      <section class="section background-extra-light">
-        <div class="wrapper" data-width="wide">
-          <div
-            class="equal-columns"
-            data-gap="large"
-            data-vertical-alignment="centered"
-          >
-            <!--two colomns-->
-            <div>
-              <img
-                src="assets/myprofiles/Untitled design.jpg"
-                alt="my profile"
-                class="about-picture"
-              />
-            </div>
-            <div class="flow font-size-lg">
-              <h2 class="section-title">
-                Get to Know Me: A Developer with a Passion for Innovation
-              </h2>
-              <p class="text-accent-gray">
-                A dedicated <strong>Software Engineering</strong> student with a
-                passion for <strong>full-stack development</strong>. I love
-                <strong>building dynamic, user-friendly applications</strong>
-                that solve real-world problems and make a positive impact. I
-                completed my Advanced Level (AL) Examination in the
-                <strong>Physical Science</strong> stream in Sri Lanka, excelling
-                in subjects like Combined Mathematics and Chemistry. Currently,
-                I’m pursuing my undergraduate studies in Software Engineering,
-                where I’m developing my skills in
-                <strong>front-end and back-end</strong> technologies.
-              </p>
-              <a class="button" href="aboutMe.html">Dive into My World</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Hero Section Ending-->
-
-      <!--******************Skills Section Starting************ -->
-      <section class="section background-dark" data-padding="compact">
-        <div class="wrapper" data-width="wide">
-          <h2 class="section-title">
-            Bringing Ideas to Life with Code & Strategy
-          </h2>
-          <div class="faq-bento-grid">
-            <div class="card">
-              <img src="assets/services/IMG-20250304-WA0007.jpg" alt="" />
-              <h3 class="card__title">
-                What Do You Need to Build a Powerful Website?
-              </h3>
-              <p class="text-accent-gray">
-                "You'll need a solid tech stack, including HTML, CSS, and
-                JavaScript for frontend design, along with a robust backend
-                powered by Node.js and Express. A well-structured database like
-                MongoDB ensures efficient data handling, while GitHub helps
-                manage your code. Responsive design principles, SEO
-                optimization, and strong security measures elevate the user
-                experience. Finally, testing tools and deployment platforms like
-                Vercel or Netlify ensure your website runs smoothly across all
-                devices."
-              </p>
-            </div>
-            <div class="card">
-              <img src="assets/services/IMG-20250304-WA0006.jpg" alt="" />
-              <h3 class="card__title">
-                Key Technologies for Robust Software Solutions
-              </h3>
-              <p class="text-accent-gray">
-                "Developing high-quality software requires a strategic approach.
-                A strong foundation with programming languages like JavaScript,
-                Python, or Java ensures versatility. Frameworks such as React,
-                Angular, or Vue enhance frontend efficiency, while robust
-                backend solutions like Node.js, Express, or Django manage
-                server-side operations. Efficient databases like MongoDB or
-                PostgreSQL handle data storage, and cloud platforms like AWS or
-                Firebase ensure scalability. Agile methodologies, testing
-                frameworks, and version control tools like GitHub contribute to
-                seamless development and deployment."
-              </p>
-            </div>
-            <div class="card">
-              <img src="assets/services/IMG-20250304-WA0008.jpg" alt="" />
-              <h3 class="card__title">
-                Strategies to Boost Online Visibility & Engagement
-              </h3>
-              <p class="text-accent-gray">
-                "A successful digital marketing strategy starts with a
-                well-optimized website and strong SEO practices to rank higher
-                on search engines. Social media marketing leverages platforms
-                like Facebook, Instagram, and LinkedIn to engage audiences.
-                Content marketing through blogs, videos, and email campaigns
-                helps build authority and trust. Paid advertising (Google Ads &
-                Facebook Ads) drives targeted traffic, while analytics tools
-                like Google Analytics provide insights for continuous
-                improvement. Combining these strategies ensures your brand
-                reaches the right audience and maximizes growth."
-              </p>
-            </div>
-            <div class="card">
-              <img
-                src="assets/services/man-with-laptop-shouting-by-megaphone.jpg"
-                alt=""
-              />
-              <h3 class="card__title">
-                Strategies to Boost Online Visibility & Engagement
-              </h3>
-              <p class="text-accent-gray">
-                "A successful digital marketing strategy starts with a
-                well-optimized website and strong SEO practices to rank higher
-                on search engines. Social media marketing leverages platforms
-                like Facebook, Instagram, and LinkedIn to engage audiences.
-                Content marketing through blogs, videos, and email campaigns
-                helps build authority and trust. Paid advertising (Google Ads &
-                Facebook Ads) drives targeted traffic, while analytics tools
-                like Google Analytics provide insights for continuous
-                improvement. Combining these strategies ensures your brand
-                reaches the right audience and maximizes growth."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--******************Skills Section Starting************ -->
-
-      <!--******************Certificate Section Starting************ -->
-      <section class="section background-accent" data-padding="compact">
-        <div class="wrapper" data-width="wide">
-          <h2 class="section-title">My Certificates</h2>
-          <div class="faq-bento-grid">
-            <div class="card">
-              <img
-                src="assets/certificates/javascript-first-steps-dark_page-0001.jpg"
-                alt=""
-              />
-              <h3 class="card__title">
-                From Core Concepts to Professional JavaScript Mastery
-              </h3>
-              <p class="text-accent-gray">
-                "My educational journey combines a strong analytical background
-                with hands-on coding expertise. Alongside my studies in software
-                engineering, I have completed the JavaScript Beginner to
-                Professional course on Frontend Masters, enhancing my skills in
-                modern web development. This has equipped me with a deep
-                understanding of JavaScript, allowing me to build dynamic and
-                efficient web applications."
-              </p>
-            </div>
-            <div class="card">
-              <img
-                src="assets/certificates/getting-started-css-dark_page-0001.jpg"
-                alt=""
-              />
-              <h3 class="card__title">
-                Mastering the Building Blocks of the Web
-              </h3>
-              <p class="text-accent-gray">
-                Additionally, I earned the CSS Professional Certificate,
-                enhancing my ability to design responsive, visually engaging,
-                and well-structured user interfaces. These courses have equipped
-                me with the essential tools to build dynamic and seamless web
-                experiences."
-              </p>
-            </div>
-            <div class="card">
-              <img
-                src="assets/certificates/153eb8bf7478e979062caa6ab5e4ad23.jpg"
-                alt=""
-              />
-              <h3 class="card__title">
-                Mastering the Core of Software Development
-              </h3>
-              <p class="text-accent-gray">
-                I have completed the Java Beginner to Professional course on
-                EDUCBA, gaining expertise in Java fundamentals, object-oriented
-                programming (OOP), data structures, and backend development.
-                This has strengthened my ability to build scalable and efficient
-                applications.
-              </p>
-            </div>
-            <div class="card">
-              <img
-                src="assets/certificates/getting-started-css-dark_page-0001.jpg"
-                alt=""
-              />
-              <h3 class="card__title">
-                Mastering the Building Blocks of the Web
-              </h3>
-              <p class="text-accent-gray">
-                Additionally, I earned the CSS Professional Certificate,
-                enhancing my ability to design responsive, visually engaging,
-                and well-structured user interfaces. These courses have equipped
-                me with the essential tools to build dynamic and seamless web
-                experiences."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--******************Certificate Section ending************ -->
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
     </main>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"
-    ></script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== EMAIL JS ===============-->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
