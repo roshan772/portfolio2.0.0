@@ -666,7 +666,7 @@ body.dark-theme {
   position: relative;
   height: 4rem;
 }
-.contact__form input {
+.contact__form-input {
   position: absolute;
   top: 0;
   left: 0;
