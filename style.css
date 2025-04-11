@@ -1034,7 +1034,7 @@ body.dark-theme {
   }
   .home__info {
     grid-template-rows: repeat(3, 130px);
-    row-gap: 4rem;
+    row-gap: 5rem;
     margin-top: 16rem;
   }
   .skills__container {
@@ -1069,15 +1069,15 @@ body.dark-theme {
   }
   .services__card {
     width: 245px;
-    height: 345px;
+    height: 365px;
     border-radius: 7.6rem;
-    padding: 3.5rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
   .services__card i {
     font-size: 2.5rem;
   }
   .services__border {
-    width: 265px;
+    width: 245px;
     height: 365px;
     border-radius: 8.25rem;
   }
