@@ -148,6 +148,7 @@ body.dark-theme {
 .dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(207, 4%, 35%);
 }
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -843,13 +844,14 @@ body.dark-theme {
   margin: 100px auto;
 }
 .tmContainer {
-  padding: 10px 50px;
+  padding: 20px 50px;
   position: relative;
   width: 50%;
+  background-color: #f5faf7;
 }
 .text-box {
   padding: 20px 30px;
-  background-color: beige;
+  background-color: #f1f5fd;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -874,9 +876,9 @@ body.dark-theme {
 .timeline::after {
   content: "";
   position: absolute;
-  width: 6px;
+  width: 1px;
   height: 100%;
-  background-color: blue;
+  background-color: var(--title-color);
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -898,7 +900,7 @@ body.dark-theme {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid red;
+  border-left: 15px solid var(--text-color-light);
   right: -15px;
 }
 .right-container-arrow {
@@ -909,7 +911,7 @@ body.dark-theme {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid red;
+  border-right: 15px solid var(--text-color-light);
   left: -15px;
 }
 /*=============== BREAKPOINTS ===============*/
