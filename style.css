@@ -1250,6 +1250,8 @@ body.dark-theme {
     width: 100%;
     padding-left: 80px;
     padding-right: 25px;
+    padding-top: 35px;
+    margin-bottom: 30px;
   }
   .text-box {
     font-size: 13px;
@@ -1266,7 +1268,7 @@ body.dark-theme {
   }
   .left-container-arrow,
   .right-container-arrow {
-    border-right: 15px solid red;
+    border-right: 15px solid var(--text-color-light);
     border-left: 0;
     left: -15px;
   }
