@@ -163,6 +163,15 @@ body.dark-theme {
 .section {
   padding-block: 2.5rem;
 }
+.section__pink {
+  background-color: #f8f5fb;
+}
+.section__blue {
+  background-color: #f1f5fd;
+}
+.section__green {
+  background-color: #f5faf7;
+}
 
 .section__border {
   border-bottom: 1px solid var(--title-color);
@@ -373,6 +382,7 @@ body.dark-theme {
 .skills__container {
   row-gap: 3.5rem;
 }
+
 .skills__title {
   display: flex;
   justify-content: center;
@@ -1056,7 +1066,7 @@ body.dark-theme {
     color: var(--title-color);
   }
   .section {
-    padding-block: 8rem 0;
+    padding-block: 5rem 0;
   }
   .home__title {
     font-size: 2.25rem;
