@@ -148,7 +148,22 @@ body.dark-theme {
 .dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(207, 4%, 35%);
 }
+.dark-theme .tmContainer {
+  background-color: hsl(207, 4%, 15%);
+}
+.dark-theme .text-box {
+  background-color: hsl(207, 4%, 35%);
+}
+.dark-theme .text-box h2 {
+  color: white;
+}
 
+.dark-theme .text-box small {
+  color: white;
+}
+.dark-theme .text-box p {
+  color: white;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
